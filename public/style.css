@@ -12,7 +12,13 @@ h1 {
   font-family: fantasy;
   font-size: 4em;
   text-align: center;
-  margin: 1em;
+  margin: 1em 1em 0em 1em;
+}
+
+p {
+  font-family: fantasy;
+  font-size: 30px;
+  text-align: center;
 }
 
 /*Navigation Bar*/
@@ -79,3 +85,27 @@ nav a {
 }
 
 /*register student page*/
+
+#form {
+  display: flex;
+  justify-content: center;
+}
+
+.register {
+  font-family: verdana;
+  display: flex;
+  flex-direction: column;
+  margin: 2% 25%;
+}
+
+input {
+  margin: 10px;
+}
+
+input[type="submit"] {
+  font-size: 20px;
+  background-color: #000;
+  color: #fff;
+  padding: 4px;
+  border: hidden;
+}
