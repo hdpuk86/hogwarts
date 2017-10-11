@@ -37,10 +37,5 @@ class House
     house = SqlRunner.run(sql, "find_house", values).first()
     return House.new(house)
   end
-  # def get_image()
-  #   if @name == 'Hufflepuff'
-  #     return 'url'
-  #   end
-  # end
 
 end

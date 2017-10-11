@@ -1,3 +1,81 @@
-body {
-  background-color: tomato;
+/*main*/
+* {
+  padding: 0px;
+  margin: 0px;
 }
+
+body {
+  background-color: #A9ACAC;
+}
+
+h1 {
+  font-family: fantasy;
+  font-size: 4em;
+  text-align: center;
+  margin: 1em;
+}
+
+/*Navigation Bar*/
+
+nav {
+  background-color: #151819;
+  padding: 50px;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+nav a {
+  color: white;
+  font-size: 25px;
+  text-decoration: none;
+}
+
+.navButton {
+  height: 30px;
+  background-color: #151819;
+  border: hidden;
+}
+
+
+/*homepage*/
+#hogwartsCrest {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px;
+}
+
+#hogwartsImage {
+  width: 300px;
+}
+
+/*all students page*/
+
+#studentContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0% 10%;
+}
+
+.student {
+  display: flex;
+  justify-content: space-between;
+  background-color: #939196;
+  margin: 20px;
+  padding: 10px;
+  width: 40%;
+  font-size: 20px;
+  font-family: verdana;
+}
+
+.houseCrest {
+  width: 150px;
+}
+
+/*register student page*/

@@ -1,21 +1,31 @@
-<form action="/students" method="post">
+<form class="register" action="/students" method="post">
+
+<div>
   <label for="firstName">First Name</label>
   <input type="text" name="first_name" id="firstName"/>
+</div>
 
+<div>
   <label for="lastName">Last Name</label>
   <input type="text" name="last_name" id="lastName"/>
+</div>
 
+<div>
   <label for="House">Select a House</label>
   <select name="house" id="House">
-    <option value="Hufflepuff">Hufflepuff</option>
-    <option value="Ravenclaw">Ravenclaw</option>
-    <option value="Gryffindor">Gryffindor</option>
-    <option value="Slytherin">Slytherin</option>
+    <% for house in @houses %>
+    <option value="<%= house.id %>"><%= house.name%></option>
+  <% end %>
   </select>
+</div>
 
+<div>
   <label for="age">Age</label>
   <input type="number" name="age" id="age"/>
+</div>
 
+<div>
   <input type="submit" value="Register">
+<div>
 
 </form>
