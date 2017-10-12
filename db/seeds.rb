@@ -6,6 +6,7 @@ require 'pry-byebug'
 Student.delete_all()
 House.delete_all()
 
+
 #House.....s
 house1 = House.new({
   'name' => 'Hufflepuff',
@@ -49,18 +50,29 @@ student2 = Student.new({
   })
 student2.save()
 
+student3 = Student.new({
+  'first_name' => 'Cho',
+  'last_name' => 'Chang',
+  'house' => house4.id,
+  'age' => 12
+  })
+student3.save()
 
-#
-# house3 = House.new({
-#   'name' => 'Ravenclaw'
-#   'logo' => ''
-#   })
-#
-# house4 = House.new({
-#   'name' => 'Gryffindor'
-#   'logo' => ''
-#   })
+student4 = Student.new({
+  'first_name' => 'Cedric',
+  'last_name' => 'Diggory',
+  'house' => house1.id,
+  'age' => 14
+  })
+student4.save()
 
+student5 = Student.new({
+  'first_name' => 'Draco',
+  'last_name' => 'Malfoy',
+  'house' => house3.id,
+  'age' => 11
+  })
+student5.save()
 
 binding.pry()
 nil
